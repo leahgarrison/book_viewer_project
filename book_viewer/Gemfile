@@ -1,5 +1,15 @@
 source "https://rubygems.org"
 
-gem "sinatra", "~>1.4.7"
+
+gem "resolver"
+
+gem "molinillo"
+gem "sinatra", "2.1.0"
 gem "sinatra-contrib"
 gem "erubis"
+
+ruby "2.7.0"
+
+group :production do
+  gem "puma"
+end
