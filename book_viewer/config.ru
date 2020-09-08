@@ -1,4 +1,2 @@
-# require "./book_viewer"
-require 'sinatra'
-require "sinatra-contrib"
+require "./book_viewer"
 run Sinatra::Application

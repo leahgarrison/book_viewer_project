@@ -1,35 +1,35 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    backports (3.18.2)
     erubis (2.7.0)
     molinillo (0.6.6)
     multi_json (1.15.0)
-    mustermann (1.1.1)
-      ruby2_keywords (~> 0.0.1)
-    nio4r (2.5.2)
-    puma (4.3.5)
+    nio4r (2.5.3)
+    puma (4.3.6)
       nio4r (~> 2.0)
-    rack (2.2.3)
-    rack-protection (2.1.0)
+    rack (1.6.13)
+    rack-protection (1.5.5)
       rack
-    redis (4.2.1)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    redis (4.2.2)
     redis-namespace (1.8.0)
       redis (>= 3.0.4)
     resolver (0.1.2)
       redis (> 2.0.0)
       redis-namespace (> 0.8.0)
-    ruby2_keywords (0.0.2)
-    sinatra (2.1.0)
-      mustermann (~> 1.0)
-      rack (~> 2.2)
-      rack-protection (= 2.1.0)
-      tilt (~> 2.0)
-    sinatra-contrib (2.1.0)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-contrib (1.4.7)
+      backports (>= 2.0)
       multi_json
-      mustermann (~> 1.0)
-      rack-protection (= 2.1.0)
-      sinatra (= 2.1.0)
-      tilt (~> 2.0)
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (>= 1.3, < 3)
     tilt (2.0.10)
 
 PLATFORMS
@@ -40,7 +40,7 @@ DEPENDENCIES
   molinillo
   puma
   resolver
-  sinatra (= 2.1.0)
+  sinatra (~> 1.4.7)
   sinatra-contrib
 
 RUBY VERSION
